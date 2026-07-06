@@ -30,7 +30,7 @@ color:#555;
 
 .hero{
 
-height:50vh;
+min-height:50vh;
 
 background:linear-gradient(rgba(255,255,255,.45),rgba(255,255,255,.75)),
 url("images/fondo.png");
@@ -44,6 +44,12 @@ align-items:center;
 text-align:center;
 
 padding:20px;
+
+}
+
+.hero > div{
+
+max-width:820px;
 
 }
 
@@ -199,9 +205,54 @@ color:#888;
 
 @media(max-width:700px){
 
+body{
+
+background-size:100% auto;
+background-position:top center;
+background-attachment:scroll;
+background-repeat:repeat-y;
+
+}
+
+.hero{
+
+min-height:auto;
+background-size:100% auto;
+background-position:top center;
+background-repeat:no-repeat;
+padding:70px 24px 45px;
+
+}
+
 .hero h1{
 
-font-size:42px;
+font-size:36px;
+
+}
+
+.host{
+
+font-size:15px;
+
+}
+
+.hero p{
+
+font-size:16px;
+line-height:1.55;
+
+}
+
+section{
+
+padding:35px 18px;
+
+}
+
+.card{
+
+padding:30px 22px;
+border-radius:16px;
 
 }
 
